@@ -16,6 +16,7 @@ public class ViewNavigator {
     @Getter
     @Setter
     private static String currentScreen;
+    private static Object currentController;
 
     public static void setMainStage(Stage stage) {
         mainStage = stage;
@@ -37,11 +38,14 @@ public class ViewNavigator {
     private static void renderScreen(String screen) {
         try {
             //
-            FXMLLoader loader = new FXMLLoader();
-            Parent root = loader.load();
+            FXMLLoader fxmlLoader = new FXMLLoader(ViewNavigator.class.getResource(screen));
+            Parent root = fxmlLoader.load();
             //
             setCurrentScreen(screen);
+            currentController = fxmlLoader.getController();
+            //
             Scene scene = new Scene(root, Color.TRANSPARENT);
+            scene.getStylesheets().add(String.valueOf(ViewNavigator.class.getResource("/css/style.css")));
             //
             mainStage.setScene(scene);
             mainStage.centerOnScreen();
