@@ -1,0 +1,879 @@
+
+/*-----   Root variables   -----*/
+.root {
+    /* Font variables */
+    -fx-font-family: "Geist", sans-serif;
+    -fx-font-size: 12px;
+
+    /* Dark Theme variables */
+    -primary-bg: #000000;
+    -primary-fg: #ffffff;
+    -secondary-bg: #222222;
+    -accent: #333333;
+    -card: #090909;
+    -popover: #121212;
+    -muted: #1d1d1d;
+    -muted-fg: #a4a4a4;
+    -border:  #242424;
+    -input: #333333;
+    -ring: #a4a4a4;
+    -destructive: #ff5b5b;
+    -destructive-fg: #000000;
+    -sidebar: #121212;
+    -chart-1-bg: #ffae04;
+    -chart-2-bg: #2671f4;
+    -chart-3-bg: #747474;
+    -chart-4-bg: #525252;
+    -chart-5-bg: #e4e4e4;
+
+    /* Light Theme variables
+    -light-theme-bg-color: rgb(255 255 255 / 31%);
+    -light-theme-color: #3c3a3a;
+    -light-inactive-color: #333333;
+    -light-button-inactive: #3c3a3a;
+    -light-search-bg: rgb(255 255 255 / 31%);
+    -light-dropdown-bg: #f7f7f7;
+    -light-overlay-bg: rgb(255 255 255 / 30%);
+    -light-dropdown-hover: rgb(236 236 236);
+    -light-border-color: rgb(255 255 255 / 35%);
+    -light-popup-bg: rgb(255 255 255);
+    -light-hover-menu-bg: rgba(255 255 255 / 35%);
+    -light-scrollbar-bg: rgb(255 253 253 / 57%);
+    -light-content-title-color: --theme-color; */
+
+    /* Color variables */
+    -blue-color: #1447e6;
+    -green-color:  #00bc7d;
+    -orange-color: #fe9a00;
+    -purple-color: #ad46ff;
+    -rose-color: #ff2056;
+
+    -blue-500: #1447e680;
+    -green-500:  #00bc7d80;
+    -orange-500: #fe9a0080;
+    -purple-500:#ad46ff80;
+    -rose-500: #ff205680;
+    
+    -blue-100: #1447e626;
+    -green-100:  #00bc7d26;
+    -orange-100: #fe9a0026;
+    -purple-100:#ad46ff26;
+    -rose-100: #ff205626;
+}
+
+/*-----   item Alignment variables   -----*/
+.item-top-left {
+    -fx-alignment: top-left;
+}
+
+.item-top-center {
+    -fx-alignment: top-center;
+}
+
+.item-top-right {
+    -fx-alignment: top-right;
+}
+
+.item-center-left {
+    -fx-alignment: center-left;
+}
+
+.item-center {
+    -fx-alignment: center;
+}
+
+.item-center-right {
+    -fx-alignment: center-right;
+}
+
+.item-bottom-left {
+    -fx-alignment: bottom-left;
+}
+
+.item-bottom-center {
+    -fx-alignment: bottom-center;
+}
+
+.item-bottom-right {
+    -fx-alignment: bottom-right;
+}
+
+/*----- Text Alignment variables -----*/
+.text-left {
+    -fx-text-alignment: left;
+}
+
+.text-center {
+    -fx-text-alignment: center;
+}
+
+.text-right {
+    -fx-text-alignment: right;
+}
+
+/*----- Item Margin variables -----*/
+.m-2 {
+    -fx-margin: 2px;
+}
+
+.m-5 {
+    -fx-margin: 5px;
+}
+
+.m-10 {
+    -fx-margin: 10px;
+}
+
+.m-15 {
+    -fx-margin: 15px;
+}
+
+.m-20 {
+    -fx-margin: 20px;
+}
+
+/*----- Item Horizontal Margin variables -----*/
+.mx-2 {
+    -fx-margin: 0 2px;
+}
+
+.mx-5 {
+    -fx-margin: 0 5px;
+}
+
+.mx-10 {
+    -fx-margin: 0 10px;
+}
+
+.mx-15 {
+    -fx-margin: 0 15px;
+}
+
+.mx-20 {
+    -fx-margin: 0 20px;
+}
+
+/*----- Item Vertical Margin variables -----*/
+.my-2 {
+    -fx-margin: 2px 0;
+}
+
+.my-5 {
+    -fx-margin: 5px 0;
+}
+
+.my-10 {
+    -fx-margin: 10px 0;
+}
+
+.my-15 {
+    -fx-margin: 15px 0;
+}
+
+.my-20 {
+    -fx-margin: 20px 0;
+}
+
+/*----- Item Side Margin variables -----*/
+.mt-2 {
+    -fx-margin: 2px 0 0 0;
+}
+
+.mb-2 {
+    -fx-margin: 0 0 2px 0;
+}
+
+.ml-2 {
+    -fx-margin: 0 0 0 2px;
+}
+
+.mr-2 {
+    -fx-margin: 0 2px 0 0;
+}
+
+.mt-5 {
+    -fx-margin: 5px 0 0 0;
+}
+
+.mb-5 {
+    -fx-margin: 0 0 5px 0;
+}
+
+.ml-5 {
+    -fx-margin: 0 0 0 5px;
+}
+
+.mr-5 {
+    -fx-margin: 0 5px 0 0;
+}
+
+.mt-10 {
+    -fx-margin: 10px 0 0 0;
+}
+
+.mb-10 {
+    -fx-margin: 0 0 10px 0;
+}
+
+.ml-10 {
+    -fx-margin: 0 0 0 10px;
+}
+
+.mr-10 {
+    -fx-margin: 0 10px 0 0;
+}
+
+.mt-15 {
+    -fx-margin: 15px 0 0 0;
+}
+
+.mb-15 {
+    -fx-margin: 0 0 15px 0;
+}
+
+.ml-15 {
+    -fx-margin: 0 0 0 15px;
+}
+
+.mr-15 {
+    -fx-margin: 0 15px 0 0;
+}
+
+.mt-20 {
+    -fx-margin: 20px 0 0 0;
+}
+
+.mb-20 {
+    -fx-margin: 0 0 20px 0;
+}
+
+.ml-20 {
+    -fx-margin: 0 0 0 20px;
+}
+
+.mr-20 {
+    -fx-margin: 0 20px 0 0;
+}
+
+/*----- Item Padding variables -----*/
+.p-2 {
+    -fx-padding: 2px;
+}
+
+.p-5 {
+    -fx-padding: 5px;
+}
+
+.p-10 {
+    -fx-padding: 10px;
+}
+
+.p-15 {
+    -fx-padding: 15px;
+}
+
+.p-20 {
+    -fx-padding: 20px;
+}
+
+/*----- Item Horizontal Padding variables -----*/
+.px-2 {
+    -fx-padding: 0 2px;
+}
+
+.px-5 {
+    -fx-padding: 0 5px;
+}
+
+.px-10 {
+    -fx-padding: 0 10px;
+}
+
+.px-15 {
+    -fx-padding: 0 15px;
+}
+
+.px-20 {
+    -fx-padding: 0 20px;
+}
+
+/*----- Item Vertical Padding variables -----*/
+.py-2 {
+    -fx-padding: 2px 0;
+}
+
+.py-5 {
+    -fx-padding: 5px 0;
+}
+
+.py-10 {
+    -fx-padding: 10px 0;
+}
+
+.py-15 {
+    -fx-padding: 15px 0;
+}
+
+.py-20 {
+    -fx-padding: 20px 0;
+}
+
+/*----- Item Side Padding variables -----*/
+.pt-2 {
+    -fx-padding: 2px 0 0 0;
+}
+
+.pb-2 {
+    -fx-padding: 0 0 2px 0;
+}
+
+.pl-2 {
+    -fx-padding: 0 0 0 2px;
+}
+
+.pr-2 {
+    -fx-padding: 0 2px 0 0;
+}
+
+.pt-5 {
+    -fx-padding: 5px 0 0 0;
+}
+
+.pb-5 {
+    -fx-padding: 0 0 5px 0;
+}
+
+.pl-5 {
+    -fx-padding: 0 0 0 5px;
+}
+
+.pr-5 {
+    -fx-padding: 0 5px 0 0;
+}
+
+.pt-10 {
+    -fx-padding: 10px 0 0 0;
+}
+
+.pb-10 {
+    -fx-padding: 0 0 10px 0;
+}
+
+.pl-10 {
+    -fx-padding: 0 0 0 10px;
+}
+
+.pr-10 {
+    -fx-padding: 0 10px 0 0;
+}
+
+.pt-15 {
+    -fx-padding: 15px 0 0 0;
+}
+
+.pb-15 {
+    -fx-padding: 0 0 15px 0;
+}
+
+.pl-15 {
+    -fx-padding: 0 0 0 15px;
+}
+
+.pr-15 {
+    -fx-padding: 0 15px 0 0;
+}
+
+.pt-20 {
+    -fx-padding: 20px 0 0 0;
+}
+
+.pb-20 {
+    -fx-padding: 0 0 20px 0;
+}
+
+.pl-20 {
+    -fx-padding: 0 0 0 20px;
+}
+
+.pr-20 {
+    -fx-padding: 0 20px 0 0;
+}
+
+/*----- Item Spacing variables -----*/
+.spacing-2 {
+    -fx-spacing: 2px;
+}
+
+.spacing-3 {
+    -fx-spacing: 3px;
+}
+
+.spacing-5 {
+    -fx-spacing: 5px;
+}
+
+.spacing-10 {
+    -fx-spacing: 10px;
+}
+
+.spacing-15 {
+    -fx-spacing: 15px;
+}
+
+.spacing-20 {
+    -fx-spacing: 20px;
+}
+
+.spacing-30 {
+    -fx-spacing: 30px;
+}
+
+.spacing-50 {
+    -fx-spacing: 50px;
+}
+
+/*-----   Font size variables   -----*/
+.font-xxs {
+    -fx-font-size: 10;
+}
+
+.font-xs {
+    -fx-font-size: 12;
+}
+
+.font-sm {
+    -fx-font-size: 14;
+}
+
+.font-base {
+    -fx-font-size: 16;
+}
+
+.font-lg {
+    -fx-font-size: 18;
+}
+
+.font-xl {
+    -fx-font-size: 20;
+}
+
+.font-2xl {
+    -fx-font-size: 24;
+}
+
+.font-3xl {
+    -fx-font-size: 30;
+}
+
+.font-4xl {
+    -fx-font-size: 36;
+}
+
+.font-5xl {
+    -fx-font-size: 48;
+}
+
+/*-----   Font weight variables   -----*/
+.font-thin {
+    -fx-font-weight: 400;
+}
+
+.font-semibold {
+    -fx-font-weight: 600;
+}
+
+.font-bold {
+    -fx-font-weight: 700;
+}
+
+.font-extrabold {
+    -fx-font-weight: 800;
+}
+
+
+/*-----   Border Size variables   -----*/
+.border {
+    -fx-border-color: -border;
+    -fx-border-width: 1px;
+}
+
+.border-transparent {
+    -fx-border-color: transparent;
+    -fx-border-width: 1px;
+}
+
+.border-2-transparent {
+    -fx-border-color: transparent;
+    -fx-border-width: 2px;
+}
+
+.border-y {
+    -fx-border-color: -border transparent -border transparent;
+    -fx-border-width: 1px 0 1px 0;
+}
+
+.border-y-2 {
+    -fx-border-color: -border transparent -border transparent;
+    -fx-border-width: 2px 0 2px 0;
+}
+
+.border-y-4 {
+    -fx-border-color: -border transparent -border transparent;
+    -fx-border-width: 4px 0 4px 0;
+}
+
+.border-x {
+    -fx-border-color: transparent -border transparent -border ;
+    -fx-border-width: 0 1px 0 1px;
+}
+
+.border-x-2 {
+    -fx-border-color: transparent -border transparent -border ;
+    -fx-border-width: 0 2px 0 2px;
+}
+
+.border-x-4 {
+    -fx-border-color: transparent -border transparent -border ;
+    -fx-border-width: 0 4px 0 4px;
+}
+
+.border-2 {
+    -fx-border-color: -border;
+    -fx-border-width: 2px;
+}
+
+.border-4 {
+    -fx-border-color: -border;
+    -fx-border-width: 4px;
+}
+
+.border-5 {
+    -fx-border-color: -border;
+    -fx-border-width: 5px;
+}
+
+.border-6 {
+    -fx-border-color: -border;
+    -fx-border-width: 6px;
+}
+
+.border-7 {
+    -fx-border-color: -border;
+    -fx-border-width: 7px;
+}
+
+.border-10 {
+    -fx-border-color: -border;
+    -fx-border-width: 10px;
+}
+
+.border-t {
+    -fx-border-color: -border transparent transparent transparent ;
+    -fx-border-width: 1px 0 0 0;
+}
+
+.border-t-2 {
+    -fx-border-color: -border transparent transparent transparent ;
+    -fx-border-width: 2px 0 0 0;
+}
+
+.border-t-3 {
+    -fx-border-color: -border transparent transparent transparent ;
+    -fx-border-width: 3px 0 0 0;
+}
+
+.border-t-5 {
+    -fx-border-color: -border transparent transparent transparent ;
+    -fx-border-width: 5px 0 0 0;
+}
+
+.border-t-10 {
+    -fx-border-color: -border transparent transparent transparent ;
+    -fx-border-width: 10px 0 0 0;
+}
+
+.border-r {
+    -fx-border-color: transparent -border transparent transparent;
+    -fx-border-width: 0 1px 0 0;
+}
+
+.border-r-2 {
+    -fx-border-color: transparent -border transparent transparent;
+    -fx-border-width: 0 2px 0 0;
+}
+
+.border-r-5 {
+    -fx-border-color: transparent -border transparent transparent;
+    -fx-border-width: 0 5px 0 0;
+}
+
+.border-r-10 {
+    -fx-border-color: transparent -border transparent transparent;
+    -fx-border-width: 0 10px 0 0;
+}
+
+.border-b {
+    -fx-border-color: transparent transparent -border transparent;
+    -fx-border-width: 0 0 1px 0;
+}
+
+.border-b-2 {
+    -fx-border-color: transparent transparent -border transparent;
+    -fx-border-width: 0 0 2px 0;
+}
+
+.border-b-3 {
+    -fx-border-color: transparent transparent -border transparent;
+    -fx-border-width: 0 0 3px 0;
+}
+
+.border-b-5 {
+    -fx-border-color: transparent transparent -border transparent;
+    -fx-border-width: 0 0 5px 0;
+}
+
+.border-b-10 {
+    -fx-border-color: transparent transparent -border transparent;
+    -fx-border-width: 0 0 10px 0;
+}
+
+.border-l {
+    -fx-border-color: transparent transparent transparent -border;
+    -fx-border-width: 0 0 0 1px;
+}
+
+.border-l-2 {
+    -fx-border-color: transparent transparent transparent -border;
+    -fx-border-width: 0 0 0 2px;
+}
+
+.border-l-5 {
+    -fx-border-color: transparent transparent transparent -border;
+    -fx-border-width: 0 0 0 5px;
+}
+
+.border-l-10 {
+    -fx-border-color: transparent transparent transparent -border;
+    -fx-border-width: 0 0 0 10px;
+}
+
+/*-----   Background Color variables   -----*/
+.bg-primary {
+    -fx-background-color: -primary-bg;
+}
+
+.bg-foreground {
+    -fx-background-color: -primary-fg;
+}
+
+.bg-secondary {
+    -fx-background-color: -secondary-bg;
+}
+
+.bg-accent {
+    -fx-background-color: -accent;
+}
+
+.bg-card {
+    -fx-background-color: -card;
+}
+
+.bg-popover {
+    -fx-background-color: -popover;
+}
+
+.bg-muted {
+    -fx-background-color: -muted;
+}
+
+.bg-border {
+    -fx-background-color: -border;
+}
+
+.bg-input {
+    -fx-background-color: -input;
+}
+
+.bg-ring {
+    -fx-background-color: -ring;
+}
+
+.bg-destructive {
+    -fx-background-color: -destructive;
+}
+
+.bg-sidebar {
+    -fx-background-color: -sidebar;
+}
+
+.bg-chart-1 {
+    -fx-background-color: -chart-1-bg;
+}
+
+.bg-chart-2 {
+    -fx-background-color: -chart-2-bg;
+}
+
+.bg-chart-3 {
+    -fx-background-color:  -chart-3-bg;
+}
+
+.bg-chart-4 {
+    -fx-background-color: -chart-4-bg;
+}
+
+.bg-chart-5 {
+    -fx-background-color: -chart-5-bg;
+}
+
+.bg-blue {
+    -fx-background-color: -blue-color;
+}
+
+.bg-green {
+    -fx-background-color: -green-color;
+}
+
+.bg-orange {
+    -fx-background-color:  -orange-color;
+}
+
+.bg-purple {
+    -fx-background-color: -purple-color;
+}
+
+.bg-rose {
+    -fx-background-color: -rose-color;
+}
+
+
+
+/*-----   Background radius variables   -----*/
+.rounded-bg-half {
+    -fx-background-radius: 50%;
+}
+
+.rounded-bg-lg {
+    -fx-background-radius: 8;
+}
+
+.rounded-bg-xl {
+    -fx-background-radius: 12;
+}
+
+.rounded-bg-2xl {
+    -fx-background-radius: 16;
+}
+
+.rounded-bg-3xl {
+    -fx-background-radius: 24;
+}
+
+.rounded-bg-4xl {
+    -fx-background-radius: 32;
+}
+
+.rounded-bg-t {
+    -fx-background-radius: 50% 0;
+}
+
+.rounded-bg-t-xl {
+    -fx-background-radius: 12 12 0 0;
+}
+
+/*-----   Border Radius variables  -----*/
+.rounded-bd-half {
+    -fx-border-radius: 45%;
+}
+
+.rounded-bd-lg {
+    -fx-border-radius: 8;
+}
+
+.rounded-bd-xl {
+    -fx-border-radius: 12;
+}
+
+.rounded-bd-2xl {
+    -fx-border-radius: 16;
+}
+
+.rounded-bd-3xl {
+    -fx-border-radius: 24;
+}
+
+.rounded-bd-4xl {
+    -fx-border-radius: 32;
+}
+
+/*-----   Text color variables   -----*/
+.text-foreground {
+    -fx-text-fill: -primary-fg;
+    -fx-fill: -primary-fg;
+}
+
+.text-muted {
+    -fx-text-fill: -muted-fg;
+    -fx-fill: -muted-fg;
+}
+
+.text-blue {
+    -fx-text-fill: -blue-color;
+    -fx-fill: -chart-blue;
+}
+
+.text-green {
+    -fx-text-fill: -green-color;
+    -fx-fill: -chart-green;
+}
+
+.text-orange {
+    -fx-text-fill: -orange-color;
+    -fx-fill: -chart-orange;
+}
+
+.text-purple {
+    -fx-text-fill: -purple-color;
+    -fx-fill: -chart-purple;
+}
+
+.text-rose {
+    -fx-text-fill: -rose-color;
+    -fx-fill: -chart-rose;
+}
+
+
+/*-----   Cursor variables   -----*/
+.cursor-pointer {
+    -fx-cursor: hand;
+}
+
+.cursor-none {
+    -fx-cursor: none;
+}
+
+
+/*-----   Visibility variables   -----*/
+.bg-transparent {
+    -fx-background-color: transparent;
+}
+
+.bd-none {
+    -fx-border-color: transparent;
+}
+
+.hidden {
+    -fx-opacity: 0;
+    -fx-pref-width: 0;
+    -fx-pref-height: 0;
+    -fx-min-width: 0;
+    -fx-min-height: 0;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.collapsed {
+    visibility: collapse;
+}
