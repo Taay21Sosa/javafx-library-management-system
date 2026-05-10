@@ -806,7 +806,7 @@
     -fx-border-radius: 32;
 }
 
-/*-----   Text color variables   -----*/
+/*-----   Text Color variables   -----*/
 .text-foreground {
     -fx-text-fill: -primary-fg;
     -fx-fill: -primary-fg;
@@ -842,6 +842,35 @@
     -fx-fill: -chart-rose;
 }
 
+
+/*-----   Stroke Color variables   -----*/
+.stroke-foreground {
+    -fx-stroke: -primary-fg;
+}
+
+.stroke-muted {
+    -fx-stroke: -muted-fg;
+}
+
+.stroke-blue {
+    -fx-stroke: -blue-color;
+}
+
+.stroke-green {
+    -fx-stroke: -green-color;
+}
+
+.stroke-orange {
+    -fx-stroke: -orange-color;
+}
+
+.stroke-purple {
+    -fx-stroke: -purple-color;
+}
+
+.stroke-rose {
+    -fx-stroke: -rose-color;
+}
 
 /*-----   Cursor variables   -----*/
 .cursor-pointer {
