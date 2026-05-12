@@ -20,17 +20,17 @@
          <children>
             <HBox prefHeight="30.0">
                <children>
-                  <Button contentDisplay="GRAPHIC_ONLY" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="20.0" prefWidth="20.0" styleClass="rounded-bg-half" text="Button">
+                  <Button fx:id="closeSystemBtn" contentDisplay="GRAPHIC_ONLY" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="20.0" prefWidth="20.0" styleClass="rounded-bg-half" text="Button">
                      <graphic>
                         <SVGPath content="M5.43212 18.5679C6.00828 19.144 6.94243 19.144 7.51859 18.5679L12.0003 14.0863L16.4814 18.5672C17.0573 19.1431 17.9909 19.1434 18.5672 18.5679C19.144 17.9919 19.1443 17.0573 18.5679 16.4809L14.0868 12L18.5679 7.51913C19.1438 6.94326 19.1441 6.0097 18.5686 5.43346C17.9925 4.85669 17.0578 4.85638 16.4814 5.43278L12.0003 9.91365L7.51859 5.4321C6.94243 4.85597 6.00828 4.85597 5.43212 5.4321C4.85596 6.00823 4.85596 6.94232 5.43212 7.51845L9.91387 12L5.43212 16.4816C4.85596 17.0577 4.85596 17.9918 5.43212 18.5679Z" />
                      </graphic>
                   </Button>
-                  <Button contentDisplay="GRAPHIC_ONLY" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="20.0" prefWidth="20.0" styleClass="rounded-bg-half" text="Button">
+                  <Button fx:id="minimizeSystemBtn" contentDisplay="GRAPHIC_ONLY" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="20.0" prefWidth="20.0" styleClass="rounded-bg-half" text="Button">
                      <graphic>
                         <SVGPath content="M5.43212 18.5679C6.00828 19.144 6.94243 19.144 7.51859 18.5679L12.0003 14.0863L16.4814 18.5672C17.0573 19.1431 17.9909 19.1434 18.5672 18.5679C19.144 17.9919 19.1443 17.0573 18.5679 16.4809L14.0868 12L18.5679 7.51913C19.1438 6.94326 19.1441 6.0097 18.5686 5.43346C17.9925 4.85669 17.0578 4.85638 16.4814 5.43278L12.0003 9.91365L7.51859 5.4321C6.94243 4.85597 6.00828 4.85597 5.43212 5.4321C4.85596 6.00823 4.85596 6.94232 5.43212 7.51845L9.91387 12L5.43212 16.4816C4.85596 17.0577 4.85596 17.9918 5.43212 18.5679Z" />
                      </graphic>
                   </Button>
-                  <Button contentDisplay="GRAPHIC_ONLY" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="20.0" prefWidth="20.0" styleClass="rounded-bg-half" text="Button">
+                  <Button fx:id="maximizeSystemBtn" contentDisplay="GRAPHIC_ONLY" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="20.0" prefWidth="20.0" styleClass="rounded-bg-half" text="Button">
                      <graphic>
                         <SVGPath content="M5.43212 18.5679C6.00828 19.144 6.94243 19.144 7.51859 18.5679L12.0003 14.0863L16.4814 18.5672C17.0573 19.1431 17.9909 19.1434 18.5672 18.5679C19.144 17.9919 19.1443 17.0573 18.5679 16.4809L14.0868 12L18.5679 7.51913C19.1438 6.94326 19.1441 6.0097 18.5686 5.43346C17.9925 4.85669 17.0578 4.85638 16.4814 5.43278L12.0003 9.91365L7.51859 5.4321C6.94243 4.85597 6.00828 4.85597 5.43212 5.4321C4.85596 6.00823 4.85596 6.94232 5.43212 7.51845L9.91387 12L5.43212 16.4816C4.85596 17.0577 4.85596 17.9918 5.43212 18.5679Z" />
                      </graphic>
@@ -70,7 +70,7 @@
                <children>
                   <HBox>
                      <children>
-                        <Button graphicTextGap="12.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="150.0" text="GitHub">
+                        <Button fx:id="githubBtn" graphicTextGap="12.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="150.0" text="GitHub">
                            <graphic>
                               <SVGPath content="M6.51734 17.1132C6.91177 17.6905 8.10883 18.9228 9.74168 19.2333M9.86428 22C8.83582 21.8306 2 19.6057 2 12.0926C2 5.06329 8.0019 2 12.0008 2C15.9996 2 22 5.06329 22 12.0926C22 19.6057 15.1642 21.8306 14.1357 22C14.1357 22 13.9267 18.5826 14.0487 17.9969C14.1706 17.4113 13.7552 16.4688 13.7552 16.4688C14.7262 16.1055 16.2043 15.5847 16.7001 14.1874C17.0848 13.1032 17.3268 11.5288 16.2508 10.0489C16.2508 10.0489 16.5318 7.65809 15.9996 7.56548C15.4675 7.47287 13.8998 8.51192 13.8998 8.51192C13.4432 8.38248 12.4243 8.13476 12.0018 8.17939C11.5792 8.13476 10.5568 8.38248 10.1002 8.51192C10.1002 8.51192 8.53249 7.47287 8.00036 7.56548C7.46823 7.65809 7.74917 10.0489 7.74917 10.0489C6.67316 11.5288 6.91516 13.1032 7.2999 14.1874C7.79575 15.5847 9.27384 16.1055 10.2448 16.4688C10.2448 16.4688 9.82944 17.4113 9.95135 17.9969C10.0733 18.5826 9.86428 22 9.86428 22Z" fill="TRANSPARENT" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="2.0" />
                            </graphic>
@@ -81,7 +81,7 @@
                               <String fx:value="cursor-pointer" />
                            </styleClass>
                         </Button>
-                        <Button graphicTextGap="12.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="150.0" text="Google">
+                        <Button fx:id="googleBtn" graphicTextGap="12.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="150.0" text="Google">
                            <graphic>
                               <SVGPath content="M15.545 6.558a9.4 9.4 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.7 7.7 0 0 1 5.352 2.082l-2.284 2.284A4.35 4.35 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.8 4.8 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.7 3.7 0 0 0 1.599-2.431H8v-3.08z" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" />
                            </graphic>
@@ -132,7 +132,7 @@
                         <Insets bottom="3.0" />
                      </VBox.margin>
                   </Label>
-                  <TextField minHeight="26.0" minWidth="350.0">
+                  <TextField fx:id="emailFld" minHeight="26.0" minWidth="350.0">
                      <padding>
                         <Insets bottom="4.0" left="12.0" right="12.0" top="4.0" />
                      </padding>
@@ -143,7 +143,7 @@
                         <String fx:value="rounded-bd-lg" />
                      </styleClass>
                   </TextField>
-                  <Label styleClass="hidden" text="Email Is required">
+                  <Label fx:id="emailStatusLbl" styleClass="text-rose" text="Email Is required" visible="false">
                      <font>
                         <Font size="11.0" />
                      </font>
@@ -174,7 +174,7 @@
                         <Insets bottom="3.0" />
                      </VBox.margin>
                   </Label>
-                  <TextField maxHeight="28.0" maxWidth="250.0" minHeight="26.0" minWidth="350.0">
+                  <TextField fx:id="passwordFld" maxHeight="28.0" maxWidth="250.0" minHeight="26.0" minWidth="350.0">
                      <padding>
                         <Insets bottom="4.0" left="12.0" right="12.0" top="4.0" />
                      </padding>
@@ -185,7 +185,7 @@
                         <String fx:value="rounded-bd-lg" />
                      </styleClass>
                   </TextField>
-                  <Label styleClass="hidden" text="Password Is required">
+                  <Label fx:id="passwordStatusLbl" styleClass="text-rose" text="Password Is required" visible="false">
                      <font>
                         <Font size="11.0" />
                      </font>
@@ -203,13 +203,13 @@
             </VBox>
             <HBox prefWidth="350.0">
                <children>
-                  <CheckBox mnemonicParsing="false" text="Remember me.">
+                  <CheckBox fx:id="rememberChk" mnemonicParsing="false" text="Remember me.">
                      <styleClass>
                         <String fx:value="text-foreground" />
                         <String fx:value="cursor-pointer" />
                      </styleClass></CheckBox>
                   <Pane prefWidth="150.0" />
-                  <Label text="Forgot password?">
+                  <Label fx:id="forgetLbl" text="Forgot password?">
                      <styleClass>
                         <String fx:value="text-foreground" />
                         <String fx:value="item-center-right" />
@@ -220,7 +220,7 @@
                   <Insets bottom="5.0" left="25.0" right="25.0" top="5.0" />
                </padding>
             </HBox>
-            <Button maxWidth="350.0" minWidth="350.0" mnemonicParsing="false" prefWidth="350.0" text="Login">
+            <Button fx:id="loginBtn" maxWidth="350.0" minWidth="350.0" mnemonicParsing="false" prefWidth="350.0" text="Login">
                <padding>
                   <Insets bottom="8.0" left="12.0" right="12.0" top="8.0" />
                </padding>
@@ -231,7 +231,7 @@
                   <String fx:value="cursor-pointer" />
                </styleClass>
             </Button>
-            <Label text="Create an account.">
+            <Label fx:id="newAccountLbl" text="Create an account.">
                <graphic>
                   <Label styleClass="text-foreground" text="Not registered yet?" />
                </graphic>

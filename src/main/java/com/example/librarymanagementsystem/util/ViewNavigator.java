@@ -45,7 +45,7 @@ public class ViewNavigator {
             currentController = fxmlLoader.getController();
             //
             Scene scene = new Scene(root, Color.TRANSPARENT);
-            scene.getStylesheets().add(String.valueOf(ViewNavigator.class.getResource("/css/style.css")));
+            scene.getStylesheets().add(ViewNavigator.class.getResource("/css/style.css").toExternalForm());
             //
             mainStage.setScene(scene);
             mainStage.centerOnScreen();
